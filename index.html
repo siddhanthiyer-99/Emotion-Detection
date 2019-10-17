@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="testkacss.css">
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script>
+	<script src="testkajs.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  </style>
+	<title>Home</title>
+</head>
+<body>
+	<canvas id="c" style="border:1px solid #000000;">		
+	<script src="testkajs.js"></script>
+</canvas>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="width: 100%; height: 100vh" id="particles-js">
+      	<img src="og.jpg" alt="Sky" >
+    </div>
+    <div class="carousel-item" style="width: 100%; height: 100vh">
+        <canvas id="c" style="border:1px solid #000000;"></canvas>
+        <div class="container">
+          <div class="card-deck" style="margin-top: 5%; margin-left: 10%; margin-right: 10%">
+          <div class="card text-center bg-light" style="width: 10%">
+            <img src="cam.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Upload an image</h5>
+              <p class="card-text">Use this to find faces and detect their emotion in an image. Upload a pic from your gallery for us to show what's the mood!</p>
+              <a href="http://127.0.0.1:8080/MobileNetImage.html"><button type="button" class="btn btn-primary but" style="text-align: center">
+                UPLOAD
+              </button></a>
+            </div>
+          </div>
+          <div class="card text-center bg-light" style="width: 10%;">
+            <img src="vid.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Real Time Evaluation</h5>
+              <p class="card-text">Use this for face and emotion detection in real time using your webcam. We will tell you how you are feeling!</p>
+              <a href="http://127.0.0.1:8080/test.html">
+              <button type="button" class="btn btn-primary" style="text-align: center">
+                GO LIVE
+              </button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
